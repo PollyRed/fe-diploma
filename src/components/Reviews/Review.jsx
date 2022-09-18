@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Reviews.css';
 
 function Review(props) {
   const {image, name, text} = props;

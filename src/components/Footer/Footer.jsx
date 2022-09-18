@@ -1,14 +1,17 @@
 import React from 'react';
+import './Footer.css';
 
-import phone from '../images/icons/phone.png';
-import email from '../images/icons/email.png';
-import skype from '../images/icons/skype.png';
-import geo from '../images/icons/geo.png';
-import youtube from '../images/icons/youtube.png';
-import linkedin from '../images/icons/linkedin.png';
-import google from '../images/icons/google.png';
-import facebook from '../images/icons/facebook.png';
-import twitter from '../images/icons/twitter.png';
+import Logo from '../Logo/Logo';
+import phone from '../../images/icons/phone.png';
+import email from '../../images/icons/email.png';
+import skype from '../../images/icons/skype.png';
+import geo from '../../images/icons/geo.png';
+import youtube from '../../images/icons/youtube.png';
+import linkedin from '../../images/icons/linkedin.png';
+import google from '../../images/icons/google.png';
+import facebook from '../../images/icons/facebook.png';
+import twitter from '../../images/icons/twitter.png';
+import upArrow from '../../images/icons/up-arrow.png';
 
 export default function Footer() {
    return (
@@ -95,6 +98,12 @@ export default function Footer() {
                   </div>
                </section>
             </div>
+         </div>
+         <div className='line'/>
+         <div className='footer__bottom-wrapper'>
+            <Logo/>
+            <span><img src={upArrow} alt=""/></span>
+            <span className='footer__bottom-wrapper-text'>2018 WEB</span>
          </div>
       </footer>
    );
