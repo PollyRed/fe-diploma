@@ -1,19 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import About from './components/About/About';
-import Footer from './components/Footer/Footer';
-import HomePage from './components/HomePage/HomePage';
-import HowItWorks from './components/HowItWorks/HowItWorks';
-import Reviews from './components/Reviews/Reviews';
+import SuccessPage from "./components/SuccessPage/SuccessPage";
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
-      <About/>
-      <HowItWorks/>
-      <Reviews/>
-      <Footer/>
+      <Router>
+        <SuccessPage/>
+      </Router>
     </div>
   );
 }

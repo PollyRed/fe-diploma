@@ -31,10 +31,8 @@
 .footer_contacts-list {
   min-width: 340px;
   list-style-type: none;
-  margin: 0;
-  margin-bottom: 52px;
-  padding: 0;
-  padding-left: 66px;
+  margin: 0 0 52px;
+  padding: 0 0 0 66px;
   position: relative;
 }
 

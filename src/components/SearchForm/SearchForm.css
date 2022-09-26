@@ -30,10 +30,7 @@
   width: 325px;
   height: 60px;
   border-radius: 5px;
-  background: #FFFFFF;
-  background-image: url('../../images/icons/geo.png');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
+  background: #FFFFFF url('../../images/icons/geo.png') no-repeat right 10px center;
 }
 
 .search-form__direction-input::placeholder {
@@ -48,10 +45,7 @@
   width: 325px;
   height: 60px;
   border-radius: 5px;
-  background: #FFFFFF;
-  background-image: url('../../images/icons/date.png');
-  background-repeat: no-repeat;
-  background-position: right 10px center;
+  background: #FFFFFF url('../../images/icons/date.png') no-repeat right 10px center;
 }
 
 .search-form__date-input::placeholder {

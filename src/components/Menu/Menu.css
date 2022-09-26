@@ -15,9 +15,17 @@
 
 .menu__item {
   margin-right: 70px;
+  cursor: pointer;
+}
+
+.menu__item-text {
+  font-family: 'Roboto';
   font-style: normal;
+  text-decoration: none;
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
   color: #FFFFFF;
 }
+
+

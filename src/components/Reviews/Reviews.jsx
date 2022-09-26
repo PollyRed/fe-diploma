@@ -8,7 +8,7 @@ import EllipseOff from '../../images/icons/ellipse-off.png';
 
 function Reviews() {
   return (
-    <div>
+    <section id="reviews">
       <div className='reviews__title'>отзывы</div>
       <div className='reviews'>
         <Review image={FirstPhoto} name="Екатерина Вальнова" text="Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые."/>
@@ -21,7 +21,7 @@ function Reviews() {
         <img className='reviews__selector-img' src={EllipseOff} alt=""/>
         <img className='reviews__selector-img' src={EllipseOff} alt=""/>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -7,7 +7,7 @@ import './HowItWorks.css';
 
 function HowItWorks() {
   return (
-    <div className='how-it-works'>
+    <section className='how-it-works' id='how-it-works'>
       <div className='how-it-works__title'>как это работает</div>
       <button className='how-it-works__learn-more' type='button'>Узнать больше</button>
       <div className='how-it-works__elements'>
@@ -15,7 +15,7 @@ function HowItWorks() {
         <HowItWorksElement image={Office} text='Нет необходимости ехать в офис'/>
         <HowItWorksElement image={Directions} text='Огромный выбор направлений'/>
       </div>
-    </div>
+    </section>
   );
 }
 
