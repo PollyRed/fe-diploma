@@ -1,3 +1,5 @@
+/* eslint-disable react/forbid-prop-types */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Seat from '../seats/Seat';
@@ -38,28 +40,28 @@ export default function KupeClass({ id, seatsList, typeTicket }) {
       { number: 32, type: 'top', left: '820' },
    ];
    return (
-      <div className="coach-seats-list coach-seats-list--kupe">
-         {seats.map((el) => (
-            <Seat
-               id={id}
-               key={el.number}
-               number={el.number}
-               typeTicket={typeTicket}
-               type={el.type}
-               left={el.left}
-               available={
-                  seatsList[el.number - 1]
-                     ? seatsList[el.number - 1].available
-                     : false
-               }
-            />
-         ))}
-      </div>
+       <div className="coach-seats-list coach-seats-list--kupe">
+          {seats.map((el) => (
+              <Seat
+                  id={id}
+                  key={el.number}
+                  number={el.number}
+                  typeTicket={typeTicket}
+                  type={el.type}
+                  left={el.left}
+                  available={
+                     seatsList[el.number - 1]
+                         ? seatsList[el.number - 1].available
+                         : false
+                  }
+              />
+          ))}
+       </div>
    );
 }
 
 KupeClass.propTypes = {
    typeTicket: PropTypes.string.isRequired,
    id: PropTypes.number.isRequired,
-   seatsList: PropTypes.string.isRequired,
+   seatsList: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

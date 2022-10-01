@@ -1,14 +1,18 @@
-.seats_title {
+.seats {
+    width: 82%;
+    margin-left: 85px;
+}
+
+.seats-title {
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
     text-transform: uppercase;
-
     color: #292929;
     margin: 0 0 62px 0;
 }
 
-.seats_buttons {
+.seats-buttons {
     height: 183px;
     width: 100%;
     display: flex;
@@ -17,7 +21,7 @@
     margin-bottom: 140px;
 }
 
-.seats_button {
+.seats-button {
     height: 60px;
     padding: 0 70px 0 70px;
     font-weight: 700;
@@ -29,23 +33,23 @@
     border: none;
 }
 
-.seats_button:hover {
+.seats-button:hover {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.seats_button:active {
+.seats-button:active {
     color: #ffa800;
     border: 1px solid #ffa800;
     background-color: #e5e5e5;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.seats_button:disabled {
+.seats-button:disabled {
     background: #928f94;
     color: #ffffff;
 }
 
-.order_options {
+.order-options {
     position: relative;
     margin-bottom: 285px;
 }

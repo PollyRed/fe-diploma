@@ -1,3 +1,5 @@
+/* eslint-disable react/forbid-prop-types */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import Seat from '../seats/Seat';
@@ -23,28 +25,28 @@ export default function LuxClass({ id, seatsList, typeTicket }) {
    ];
 
    return (
-      <div className="coach-seats-list coach-seats-list--lux">
-         {seats.map((el) => (
-            <Seat
-               id={id}
-               key={el.number}
-               typeTicket={typeTicket}
-               number={el.number}
-               type={el.type}
-               left={el.left}
-               available={
-                  seatsList[el.number - 1]
-                     ? seatsList[el.number - 1].available
-                     : false
-               }
-            />
-         ))}
-      </div>
+       <div className="coach-seats-list coach-seats-list--lux">
+          {seats.map((el) => (
+              <Seat
+                  id={id}
+                  key={el.number}
+                  typeTicket={typeTicket}
+                  number={el.number}
+                  type={el.type}
+                  left={el.left}
+                  available={
+                     seatsList[el.number - 1]
+                         ? seatsList[el.number - 1].available
+                         : false
+                  }
+              />
+          ))}
+       </div>
    );
 }
 
 LuxClass.propTypes = {
    typeTicket: PropTypes.string.isRequired,
    id: PropTypes.number.isRequired,
-   seatsList: PropTypes.string.isRequired,
+   seatsList: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

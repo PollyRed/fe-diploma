@@ -1,31 +1,27 @@
 .menu {
-  display: flex;  
-  list-style: none;
-  left: 0px;
-  top: 64px;
-  background: #292929;
-  font-size: 30px;
-  font-weight: 300;
-  font-style: normal;
-  padding: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  padding-left: 10%;
+    display: flex;
+    list-style: none;
+    left: 0px;
+    top: 64px;
+    background: #292929;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    padding: 25px 0 25px 10%;
 }
 
 .menu__item {
-  margin-right: 70px;
-  cursor: pointer;
+    margin-right: 70px;
+    cursor: pointer;
 }
 
 .menu__item-text {
-  font-family: 'Roboto';
-  font-style: normal;
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 35px;
-  color: #FFFFFF;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
 }
 
 

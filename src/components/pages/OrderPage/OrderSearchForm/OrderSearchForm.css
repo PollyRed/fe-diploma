@@ -1,0 +1,102 @@
+.order-search-form {
+    min-width: 1400px;
+    max-width: 50%;
+    background: rgba(41, 41, 41, 0.8);
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.order-search-form__text {
+    margin-left: 10px;
+    margin-top: 60px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.order-search-form__inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.order-search-form__date-inputs {
+    margin-top: 10px;
+}
+
+.order-search-form__arrows-wrapper {
+    vertical-align: middle;
+}
+
+.order-search-form__arrows {
+    margin: 5px;
+}
+
+.order-search-form__direction-input {
+    width: 325px;
+    height: 60px;
+    border-radius: 5px;
+    background: #FFFFFF url('../../../../images/icons/geo.png') no-repeat right 10px center;
+}
+
+.order-search-form__direction-input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 20px;
+    color: #E5E5E5;
+}
+
+.order-search-form__date-input {
+    width: 325px;
+    height: 60px;
+    border-radius: 5px;
+    background: #FFFFFF url('../../../../images/icons/date.png') no-repeat right 10px center;
+}
+
+.order-search-form__date-input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 20px;
+    color: #E5E5E5;
+}
+
+.order-search-form__button {
+    width: 320px;
+    height: 60px;
+    background: #FFA800;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    cursor: pointer;
+    margin-left: 77%;
+}
+
+.order-search-form__button:hover {
+    color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.order-search-form__button:active {
+    border: 1px solid #ffa800;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: transparent;
+    color: #ffa800;
+}
+
+.order-search-form__button-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}

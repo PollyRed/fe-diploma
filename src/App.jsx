@@ -1,16 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 import './App.css';
-import SuccessPage from "./components/SuccessPage/SuccessPage";
+import HomePage from "./components/pages/HomePage/HomePage";
+import OrderPage from "./components/pages/OrderPage/OrderPage";
+import SuccessPage from "./components/pages/SuccessPage/SuccessPage";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <SuccessPage/>
-      </Router>
-    </div>
-  );
+    return (
+        <Router className="App">
+            <Routes>
+                <Route path="/" element={<HomePage/>}/>
+                <Route path="/order/*" element={<OrderPage/>}/>
+                <Route path="/success/*" element={<SuccessPage/>}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
