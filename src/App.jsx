@@ -8,7 +8,7 @@ import SuccessPage from "./components/pages/SuccessPage/SuccessPage";
 
 function App() {
     return (
-        <Router className="App">
+        <Router className="App" basename={window.location.pathname || ''}>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
                 <Route path="/order/*" element={<OrderPage/>}/>
